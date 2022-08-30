@@ -13,6 +13,12 @@ app.use("/", (req, res) => {
     },
   });
 });
+
+app.use("/api", (req, res) => {
+  res.json({
+    message: "successfully",
+  });
+});
 app.listen(port, () => {
   console.log(" server listen successfullly", port);
 });
